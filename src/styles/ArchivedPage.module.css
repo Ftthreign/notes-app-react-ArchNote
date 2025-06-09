@@ -1,0 +1,35 @@
+.archived_page {
+  padding: 2rem;
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.archived_page h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: var(--font-family);
+  width: 100%;
+  max-width: 720px;
+}
+
+.archived_page > div {
+  width: 100%;
+  max-width: 720px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+[data-theme="dark"] .archived_page {
+  background-color: #020617;
+  color: var(--color-text);
+}

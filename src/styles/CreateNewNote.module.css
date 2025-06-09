@@ -1,0 +1,70 @@
+.createNoteForm {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem 2rem;
+  background-color: var(--color-bg);
+  border-radius: 1rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  color: var(--color-text);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.createNoteForm__title {
+  margin: 0 0 1rem 0;
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.createNoteForm__label {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: var(--color-secondary);
+}
+
+.createNoteForm__input,
+.createNoteForm__textarea {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  border: 2px solid var(--color-primary);
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  transition: border-color 0.3s ease;
+  resize: vertical;
+}
+
+.createNoteForm__input:focus,
+.createNoteForm__textarea:focus {
+  outline: none;
+  border-color: var(--color-secondary);
+  box-shadow: 0 0 6px var(--color-secondary);
+}
+
+.createNoteForm__textarea {
+  min-height: 150px;
+  font-family: inherit;
+}
+
+.createNoteForm__button {
+  background-color: var(--color-primary);
+  color: white;
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  align-self: center;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+}
+
+.createNoteForm__button:hover {
+  background-color: var(--color-secondary);
+}

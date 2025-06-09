@@ -1,0 +1,73 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  border-bottom: 1px solid #e2e8f0;
+  font-family: var(--font-family);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+[data-theme="dark"] .navigation {
+  background-color: #0f172a;
+  border-color: #1e293b;
+}
+
+ul {
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul li a {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+ul li a:hover {
+  color: var(--color-primary);
+}
+
+.appName {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-decoration: none;
+  font-family: var(--font-family);
+  transition: color 0.3s;
+}
+
+.appName:hover {
+  color: var(--color-secondary);
+}
+
+.navActions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.navActions button {
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  color: var(--color-text);
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navActions button:hover {
+  background-color: rgba(14, 165, 233, 0.1);
+}
+
+[data-theme="dark"] .navActions button:hover {
+  background-color: rgba(20, 184, 166, 0.1);
+}

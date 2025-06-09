@@ -1,0 +1,23 @@
+:root {
+  --color-primary: #0ea5e9;
+  --color-secondary: #14b8a6;
+  --color-accent: #facc15;
+  --color-bg: #f8fafc;
+  --color-text: #0f172a;
+
+  --font-family: "Poppins", sans-serif;
+}
+
+[data-theme="dark"] {
+  --color-bg: #020617;
+  --color-text: #e2e8f0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}

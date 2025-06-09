@@ -1,0 +1,119 @@
+.Cardcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  width: 100%;
+  padding: 1rem 0;
+  justify-content: flex-start;
+}
+
+.noteItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 6px 12px rgba(15, 23, 42, 0.08);
+  transition: transform 0.2s ease, background-color 0.3s, color 0.3s;
+
+  flex: 1 1 150px;
+  max-width: 250px;
+  box-sizing: border-box;
+}
+
+.emptyMessage {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--color-text);
+  padding: 2rem;
+  background-color: rgba(250, 204, 21, 0.1);
+  border: 2px dashed var(--color-accent);
+  border-radius: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+[data-theme="dark"] .emptyMessage {
+  background-color: rgba(250, 204, 21, 0.05);
+  color: var(--color-text);
+}
+
+.noteItem:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.15);
+}
+
+[data-theme="dark"] .noteItem {
+  background-color: #1e293b;
+  box-shadow: 0 6px 12px rgba(2, 6, 23, 0.6);
+}
+
+.noteItem h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.noteItem h3 a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.noteItem h3 a:hover {
+  color: var(--color-secondary);
+}
+
+.noteItem small {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin-bottom: 0.75rem;
+}
+
+[data-theme="dark"] .noteItem small {
+  color: #cbd5e1;
+}
+
+.noteItem p {
+  flex-grow: 1;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0 0 1rem;
+  color: var(--color-text);
+  word-break: break-word;
+}
+
+.noteItem__action {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.noteItem__delete_button,
+.noteItem__archive_button {
+  background-color: transparent;
+  border: 2px solid var(--color-primary);
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--color-primary);
+  transition: all 0.3s ease;
+}
+
+.noteItem__delete_button:hover {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+  border-color: #ef4444;
+}
+
+.noteItem__archive_button:hover {
+  background-color: rgba(20, 184, 166, 0.1);
+  color: var(--color-secondary);
+  border-color: var(--color-secondary);
+}
