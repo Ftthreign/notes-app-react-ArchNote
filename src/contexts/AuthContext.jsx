@@ -43,7 +43,7 @@ function AuthProvider({ children }) {
   );
 }
 
-AuthProVider.propTypes = {
+AuthProvider.propTypes = {
   children: PropTypes.node.isRequired,
 };
 

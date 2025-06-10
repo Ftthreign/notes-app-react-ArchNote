@@ -29,7 +29,7 @@ export default function NoteDetail({ note }) {
 }
 
 NoteDetail.propTypes = {
-  notes: PropTypes.shape({
+  note: PropTypes.shape({
     id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     body: PropTypes.string.isRequired,
